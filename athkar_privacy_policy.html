@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Athkar_App - Privacy Policy</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap');
+    :root {
+      --sky: #6ab4d8;
+      --sky-dark: #3a8fb5;
+      --sky-deep: #1e6080;
+      --sky-light: #e8f6fc;
+      --sky-mid: #b3dff0;
+      --ink2: #3a5568;
+      --ink3: #607a8a;
+    }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family: 'Tajawal', Arial, sans-serif; background:#f0f8ff; color:#1a2e3b; line-height:1.8; }
+
+    .hero {
+      background: linear-gradient(160deg, #1e6080 0%, #3a8fb5 50%, #6ab4d8 100%);
+      color: white; text-align: center; padding: 56px 24px 48px;
+      position: relative; overflow: hidden;
+    }
+    .hero::before { content:''; position:absolute; top:-60px; right:-60px; width:260px; height:260px; border-radius:50%; background:rgba(255,255,255,0.06); }
+    .hero::after  { content:''; position:absolute; bottom:-80px; left:-40px; width:320px; height:320px; border-radius:50%; background:rgba(255,255,255,0.05); }
+    .hero h1 { font-size:36px; font-weight:700; margin-bottom:6px; }
+    .hero .tagline { font-size:16px; opacity:0.85; margin-bottom:14px; }
+    .hero .date-badge { display:inline-block; background:rgba(255,255,255,0.18); border:1px solid rgba(255,255,255,0.3); border-radius:20px; padding:4px 16px; font-size:13px; }
+
+    .container { max-width:900px; margin:0 auto; padding:0 20px 48px; }
+
+    .shield-banner {
+      background: linear-gradient(135deg, var(--sky-deep), var(--sky-dark));
+      color: white; border-radius:14px; padding:28px 32px;
+      margin:-24px 0 40px; display:flex; align-items:center; gap:20px; position:relative; z-index:2;
+    }
+    .shield-banner .icon-wrap { width:52px; height:52px; background:rgba(255,255,255,0.15); border-radius:14px; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+    .shield-banner h2 { font-size:18px; font-weight:700; margin-bottom:4px; color:white; }
+    .shield-banner p { font-size:14px; opacity:0.88; margin:0; line-height:1.5; }
+
+    .toc { background:white; border:1px solid var(--sky-mid); border-radius:14px; padding:24px 28px; margin-bottom:36px; }
+    .toc h3 { font-size:13px; font-weight:700; color:var(--sky-deep); letter-spacing:0.8px; text-transform:uppercase; margin-bottom:14px; }
+    .toc ul { list-style:none; display:grid; grid-template-columns:1fr 1fr; gap:6px 24px; }
+    .toc li a { color:var(--ink2); text-decoration:none; font-size:13.5px; display:flex; align-items:center; gap:6px; }
+    .toc li a:hover { color:var(--sky-dark); }
+    .toc li a::before { content:'\203A'; color:var(--sky); font-size:18px; line-height:1; }
+
+    .section { background:white; border-radius:14px; border:1px solid #d8edf5; padding:28px 32px; margin-bottom:20px; }
+    .section-header { display:flex; align-items:center; gap:12px; margin-bottom:18px; padding-bottom:14px; border-bottom:1.5px solid var(--sky-light); }
+    .section-icon { width:38px; height:38px; background:var(--sky-light); border-radius:10px; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+    .section h2 { font-size:17px; font-weight:700; color:var(--sky-deep); }
+    .section p { font-size:14.5px; color:var(--ink2); margin-bottom:10px; line-height:1.75; }
+    .section p:last-child { margin-bottom:0; }
+
+    .tag-grid { display:flex; flex-wrap:wrap; gap:8px; margin-top:10px; }
+    .tag { background:var(--sky-light); color:var(--sky-deep); border:1px solid var(--sky-mid); border-radius:20px; padding:4px 12px 4px 8px; font-size:13px; font-weight:500; display:flex; align-items:center; gap:5px; }
+    .sdk-grid { display:flex; flex-wrap:wrap; gap:8px; margin-top:10px; }
+    .sdk-tag { background:#fff5f5; color:#922; border:1px solid #f5c6c6; border-radius:20px; padding:4px 12px 4px 8px; font-size:13px; display:flex; align-items:center; gap:5px; }
+
+    .highlight-box { background:var(--sky-light); border-left:4px solid var(--sky-dark); border-radius:0 10px 10px 0; padding:16px 20px; font-size:14px; color:var(--ink2); margin:12px 0 0; line-height:1.7; }
+
+    .contact-card { display:flex; gap:12px; margin-top:12px; flex-wrap:wrap; }
+    .contact-item { display:flex; align-items:center; gap:10px; background:var(--sky-light); border:1px solid var(--sky-mid); border-radius:10px; padding:12px 18px; flex:1; min-width:200px; }
+    .ci-icon { width:36px; height:36px; background:var(--sky-dark); border-radius:8px; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+    .ci-label { font-size:11px; color:var(--ink3); text-transform:uppercase; letter-spacing:0.5px; margin-bottom:2px; }
+    .contact-item a { color:var(--sky-dark); text-decoration:none; font-size:14px; font-weight:500; }
+
+    .footer { text-align:center; padding:28px 0 8px; font-size:13px; color:var(--ink3); border-top:1px solid #d8edf5; margin-top:8px; }
+    .footer strong { color:var(--sky-dark); }
+  </style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>Athkar_App</h1>
+  <p class="tagline">Privacy Policy</p>
+  <span class="date-badge">Last Updated: July 23, 2026</span>
+</div>
+
+<div class="container">
+
+  <div class="shield-banner">
+    <div class="icon-wrap">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3L4 7v5c0 5.25 3.5 10.15 8 11.35C16.5 22.15 20 17.25 20 12V7L12 3z"/><polyline points="9 12 11 14 15 10"/></svg>
+    </div>
+    <div>
+      <h2>Your privacy is fully protected</h2>
+      <p>Athkar_App collects zero personal data &#8212; no tracking, no ads, no servers, no exceptions. Everything stays on your device.</p>
+    </div>
+  </div>
+
+  <div class="toc">
+    <h3>Contents</h3>
+    <ul>
+      <li><a href="#intro">Introduction</a></li>
+      <li><a href="#collect">Information We Collect</a></li>
+      <li><a href="#account">Account Registration</a></li>
+      <li><a href="#perms">Permissions</a></li>
+      <li><a href="#storage">Data Storage</a></li>
+      <li><a href="#internet">Internet Connectivity</a></li>
+      <li><a href="#third">Third-Party Services</a></li>
+      <li><a href="#children">Children&#8217;s Privacy</a></li>
+      <li><a href="#security">Data Security</a></li>
+      <li><a href="#rights">Your Rights</a></li>
+      <li><a href="#changes">Policy Changes</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+  </div>
+
+  <div class="section" id="intro">
+    <div class="section-header">
+      <div class="section-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1e6080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>
+      <h2>Introduction</h2>
+    </div>
+    <p>Welcome to <strong>Athkar_App</strong> &#8212; a clean, distraction-free space for Islamic remembrances (Athkar). We believe a spiritual app should respect your privacy as much as it respects your time.</p>
+    <p>This Privacy Policy describes how we handle information when you use the application. The short version: we don&#8217;t collect any.</p>
+  </div>
+
+  <div class="section" id="collect">
+    <div class="section-header">
+      <div class="section-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1e6080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg></div>
+      <h2>Information We Collect</h2>
+    </div>
+    <p>Athkar_App does not collect, process, transmit, or store any personally identifiable information &#8212; ever. The following are never requested or accessed:</p>
+    <div class="tag-grid">
+      <span class="tag"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#c0392b" stroke-width="3" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Name</span>
+      <span class="tag"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#c0392b" stroke-width="3" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Email address</span>
+      <span class="tag"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#c0392b" stroke-width="3" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Phone number</span>
+      <span class="tag"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#c0392b" stroke-width="3" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Location</span>
+      <span class="tag"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#c0392b" stroke-width="3" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Contacts</span>
+      <span class="tag"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#c0392b" stroke-width="3" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Photos &amp; videos</span>
+      <span class="tag"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#c0392b" stroke-width="3" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Messages</span>
+      <span class="tag"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#c0392b" stroke-width="3" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Payment info</span>
+      <span class="tag"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#c0392b" stroke-width="3" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Device identifiers</span>
+      <span class="tag"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#c0392b" stroke-width="3" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Advertising IDs</span>
+      <span class="tag"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#c0392b" stroke-width="3" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Browsing history</span>
+      <span class="tag"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#c0392b" stroke-width="3" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Health data</span>
+      <span class="tag"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#c0392b" stroke-width="3" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Biometrics</span>
+    </div>
+  </div>
+
+  <div class="section" id="account">
+    <div class="section-header">
+      <div class="section-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1e6080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/><line x1="17" y1="11" x2="22" y2="6"/></svg></div>
+      <h2>Account Registration</h2>
+    </div>
+    <p>No account. No sign-in. No registration. Athkar_App is ready to use the moment you open it &#8212; no personal information required, ever.</p>
+  </div>
+
+  <div class="section" id="perms">
+    <div class="section-header">
+      <div class="section-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1e6080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+      <h2>Permissions</h2>
+    </div>
+    <p>Athkar_App does not request access to any sensitive device permissions. The following are never asked for:</p>
+    <div class="tag-grid">
+      <span class="tag"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#c0392b" stroke-width="3" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Camera</span>
+      <span class="tag"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#c0392b" stroke-width="3" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Microphone</span>
+      <span class="tag"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#c0392b" stroke-width="3" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Location</span>
+      <span class="tag"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#c0392b" stroke-width="3" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Contacts</span>
+      <span class="tag"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#c0392b" stroke-width="3" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Phone</span>
+      <span class="tag"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#c0392b" stroke-width="3" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>SMS</span>
+      <span class="tag"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#c0392b" stroke-width="3" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Storage</span>
+      <span class="tag"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#c0392b" stroke-width="3" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Calendar</span>
+    </div>
+    <div class="highlight-box">The app works completely offline and requires no access to personal device data to function.</div>
+  </div>
+
+  <div class="section" id="storage">
+    <div class="section-header">
+      <div class="section-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1e6080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></div>
+      <h2>Data Storage</h2>
+    </div>
+    <p>Athkar_App has no backend servers and maintains no user database. Because no personal information is collected, there is nothing to store &#8212; on our end or anyone else&#8217;s.</p>
+  </div>
+
+  <div class="section" id="internet">
+    <div class="section-header">
+      <div class="section-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1e6080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="1" y1="1" x2="23" y2="23"/><path d="M16.72 11.06A10.94 10.94 0 0 1 19 12.55"/><path d="M5 12.55a10.94 10.94 0 0 1 5.17-2.39"/><path d="M10.71 5.05A16 16 0 0 1 22.56 9"/><path d="M1.42 9a15.91 15.91 0 0 1 4.7-2.88"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg></div>
+      <h2>Internet Connectivity</h2>
+    </div>
+    <p>Athkar_App is fully offline-capable. No personal information is sent over the internet at any point during normal operation.</p>
+  </div>
+
+  <div class="section" id="third">
+    <div class="section-header">
+      <div class="section-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1e6080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/><line x1="2" y1="2" x2="22" y2="22"/></svg></div>
+      <h2>Third-Party Services</h2>
+    </div>
+    <p>We do not integrate with any third-party analytics, advertising, or tracking services. The following SDKs and platforms are not used:</p>
+    <div class="sdk-grid">
+      <span class="sdk-tag"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#922" stroke-width="3" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Firebase</span>
+      <span class="sdk-tag"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#922" stroke-width="3" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Google Analytics</span>
+      <span class="sdk-tag"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#922" stroke-width="3" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Google AdMob</span>
+      <span class="sdk-tag"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#922" stroke-width="3" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Firebase Crashlytics</span>
+      <span class="sdk-tag"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#922" stroke-width="3" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Facebook SDK</span>
+      <span class="sdk-tag"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#922" stroke-width="3" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Any ad/tracking SDK</span>
+    </div>
+  </div>
+
+  <div class="section" id="children">
+    <div class="section-header">
+      <div class="section-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1e6080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+      <h2>Children&#8217;s Privacy</h2>
+    </div>
+    <p>Athkar_App is designed for users of all ages. Because no personal information is ever collected, the app is inherently safe for children under 13 and compliant with applicable children&#8217;s privacy laws.</p>
+  </div>
+
+  <div class="section" id="security">
+    <div class="section-header">
+      <div class="section-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1e6080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3L4 7v5c0 5.25 3.5 10.15 8 11.35C16.5 22.15 20 17.25 20 12V7L12 3z"/></svg></div>
+      <h2>Data Security</h2>
+    </div>
+    <p>The most secure data is data that is never collected. Since Athkar_App maintains no personal user database, there is nothing to breach, leak, or compromise.</p>
+    <p>We remain committed to secure development practices and regular app integrity reviews to protect the experience itself.</p>
+  </div>
+
+  <div class="section" id="rights">
+    <div class="section-header">
+      <div class="section-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1e6080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+      <h2>Your Rights</h2>
+    </div>
+    <p>Since Athkar_App does not collect or retain any personal information, there is no data for you to access, correct, export, or delete. Your privacy is intact by design &#8212; not by policy alone.</p>
+  </div>
+
+  <div class="section" id="changes">
+    <div class="section-header">
+      <div class="section-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1e6080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
+      <h2>Policy Changes</h2>
+    </div>
+    <p>We may update this Privacy Policy to reflect app improvements or legal requirements. Any changes will be posted on this page with a revised effective date. We encourage you to review it periodically.</p>
+  </div>
+
+  <div class="section" id="contact">
+    <div class="section-header">
+      <div class="section-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1e6080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+      <h2>Contact Us</h2>
+    </div>
+    <p>Have a question about this policy? We&#8217;re happy to help.</p>
+    <div class="contact-card">
+      <div class="contact-item">
+        <div class="ci-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+        <div>
+          <div class="ci-label">Email</div>
+          <a href="mailto:Alaa2Azab@gmail.com">Alaa2Azab@gmail.com</a>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="ci-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+        <div>
+          <div class="ci-label">Phone</div>
+          <a href="tel:+96599545743">+965 995 457 43</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>&#169; 2026 <strong>Athkar_App</strong>. All rights reserved. Built with privacy by design.</p>
+  </div>
+
+</div>
+</body>
+</html>
